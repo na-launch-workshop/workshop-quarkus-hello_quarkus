@@ -1,0 +1,8 @@
+site_name: Module 2
+site_description: Introduction to Red Hat Dev Spaces - Java
+
+nav:
+  - Overview: index.md
+
+plugins:
+  - techdocs-core

@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: workshop-module2-java
+  title: Module 2 - Java
+  description: |
+    Introduction to Red Hat Dev Spaces
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - devspaces
+  links:
+    - url: https://devspaces.apps.mizuho-workshop.qc2c.p1.openshiftapps.com/#https://gitlab.apps.mizuho-workshop.qc2c.p1.openshiftapps.com/developers/mizuho-workshop-module2.git
+      title: "Launch from Dev Spaces"
+      icon: web
+spec:
+  type: module
+  lifecycle: production
+  owner: group:default/cluster-admins
+  gitlab:
+    remoteUrl: https://gitlab.apps.mizuho-workshop.qc2c.p1.openshiftapps.com/developers/mizuho-workshop-module2.git
+    owner: developers
+    repository: workshop-repository
+    branch: main
+  subcomponentOf: component:default/workshop-repository
+  dependsOn:
+    - component:default/workshop-agenda
+
