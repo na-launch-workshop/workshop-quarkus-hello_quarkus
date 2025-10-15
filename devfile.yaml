@@ -1,6 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
-  name: Mizuho-Workshop-Module2
+  name: workshop-quarkus-hello_bycountry
   version: 1.0.0
   description: DevSpaces workspace for Quarkus app
 attributes:
@@ -21,7 +21,7 @@ components:
           name: hello-by-lang
           protocol: https
           targetPort: 8080          
-          path: /helloworld-by-language
+          path: /
       volumeMounts:
         - name: m2
           path: /home/user/.m2
