@@ -4,24 +4,18 @@ metadata:
   name: workshop-quarkus-hello_bycountry
   title: Hello Quarkus
   description: |
-    Introduction to Red Hat Dev Spaces
+    Introduction to Red Hat Dev Spaces with a Quarkus translation service
   annotations:
     backstage.io/techdocs-ref: dir:.
   tags:
     - devspaces
-  links:
-    - url: https://<server>/#<repo>
-      title: "Launch from Dev Spaces"
-      icon: web
+    - quarkus
+# links:
+#    - url: https://<openshift-cluster>/#<hosted-git-repo>
+#      title: "Launch from Dev Spaces"
+#      icon: web
 spec:
   type: module
   lifecycle: production
   owner: group:default/workshop-admins
-  gitlab:
-    remoteUrl: https://<server>
-    owner: developers
-    repository: workshop-repository
-    branch: main
   subcomponentOf: component:default/workshop-repository
-  dependsOn:
-    - component:default/workshop-agenda

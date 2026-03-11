@@ -1,5 +1,5 @@
-site_name: Module 2
-site_description: Introduction to Red Hat Dev Spaces - Java
+site_name: Hello Quarkus
+site_description: Introduction to Red Hat Dev Spaces with a Quarkus translation service
 
 nav:
   - Overview: index.md

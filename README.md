@@ -1,8 +1,8 @@
-# 🚀 **Module 2: Introduction to DevSpaces**
+# 🚀 **Module: Quarkus Hello World Translation Service**
 
 **Technology Stack:**  
-- Quarkus  
-- DevSpaces  
+
+- Quarkus 
 
 ---
 

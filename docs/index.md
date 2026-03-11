@@ -1,66 +1,37 @@
-# Module 2: Using Red Hat Dev Spaces - Java
+# 🚀 **Module: Quarkus Hello World Translation Service**
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+**Technology Stack:**  
 
-If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
+- Quarkus 
 
-## Running the application in dev mode
+---
 
-You can run your application in dev mode that enables live coding using:
+## 🎯 **Scenario**
 
-```shell script
-./mvnw quarkus:dev
-```
+Inside your workspace is a very simple Quarkus Application. The application returns a “hello world” based on the language you choose for it.
 
-> **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at <http://localhost:8080/q/dev/>.
+The country is based on a 2-letter country code.  
+For example, `countrycode=IT` will output “ciao mondo” (IT is for Italy).  
 
-## Packaging and running the application
+You can find all the mappings in the `translate.json` file, located in your `resources` folder.  
+There is also a timestamp after the “hello world” message.
 
-The application can be packaged using:
+---
 
-```shell script
-./mvnw package
-```
+## 🧩 **Challenge**
 
-It produces the `quarkus-run.jar` file in the `target/quarkus-app/` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/quarkus-app/lib/` directory.
+- [ ] Format the hello timestamp to use **Eastern Standard Time** (New York time)  
+- [ ] Format the hello timestamp to display as **`{HH:MM MM/DD/YYYY}`**  
+- [ ] Write a test case that verifies both the timezone and the new date format  
+- [ ] Append a query string to take an argument for the country code (e.g., `/api/query?countryCode=en`) and set the API to return the correct greeting based on the country used in the query string  
+- [ ] Add an `/api/magic8` endpoint that returns a random country code (like a magic 8-ball) and returns a random hello world greeting  
+- [ ] Write additional tests for `/api/query` and `/api/magic8`  
+- [ ] Add an additional endpoint for `/api/query` which functions the same but uses **POST** instead; use `curl` to test
 
-The application is now runnable using `java -jar target/quarkus-app/quarkus-run.jar`.
+---
 
-If you want to build an _über-jar_, execute the following command:
+## ✅ **Key Takeaways**
 
-```shell script
-./mvnw package -Dquarkus.package.jar.type=uber-jar
-```
-
-The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
-
-## Creating a native executable
-
-You can create a native executable using:
-
-```shell script
-./mvnw package -Dnative
-```
-
-Or, if you don't have GraalVM installed, you can run the native executable build in a container using:
-
-```shell script
-./mvnw package -Dnative -Dquarkus.native.container-build=true
-```
-
-You can then execute your native executable with: `./target/mizuho-workshop-module2-1.0.0-SNAPSHOT-runner`
-
-If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
-
-## Related Guides
-
-- REST ([guide](https://quarkus.io/guides/rest)): A Jakarta REST implementation utilizing build time processing and Vert.x. This extension is not compatible with the quarkus-resteasy extension, or any of the extensions that depend on it.
-
-## Provided Code
-
-### REST
-
-Easily start your REST Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+- 👀 First look at Dev Spaces  
+- ⚙️ Set up a Quarkus App in Dev Spaces  
+- 🔄 Ran Quarkus in Developer Mode with Live Reload!
