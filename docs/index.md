@@ -1,5 +1,8 @@
 # 🚀 **Module: Quarkus Hello World Translation Service**
 
+Instead of setting up tooling locally, developers get a ready-to-use workspace running inside OpenShift, accessible through a browser. Think of it as "VS Code + your dev
+environment + Kubernetes/OpenShift integration" all running in the cloud.
+
 **Technology Stack:**  
 
 - Quarkus 
